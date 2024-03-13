@@ -1,14 +1,15 @@
 #include<stdio.h>
 int main()
 {
-	int a,i;
+	int a;
 	char c;
 	printf("enter character \nNumber :\n ");
 	scanf("%c%d",&c,&a);
-	for(i=1;i<=a;i++)
+	while(a>0)
 	{
 
 		printf("*");
+		a--;
 	}
 	return 0;
 }

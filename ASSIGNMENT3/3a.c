@@ -1,14 +1,15 @@
 #include<stdio.h>
 int main()
 {
-	int num,rem,sum;
+	int num,rem,sum,i=1;
 	printf("enter number of \t");
 	scanf("%d",&num);
-	for(int i=1;i<=num;i++)
+	while(num>=i)
 	{
 		rem=num%10;
 		sum=sum+rem;
 		num=num/10;
+		i++;
 	}
 	printf("%d\n",sum);
 

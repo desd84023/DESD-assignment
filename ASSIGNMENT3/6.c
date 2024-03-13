@@ -1,15 +1,15 @@
 #include<stdio.h>
 int main()
 {
-	int num,fact=1;
+	int num,fact=1,i=1;
 	printf("enter number of \t");
 	scanf("%d",&num);
 	
-	for(int i=1;i<=num;i++)
+	while(i<=num)
 	{
 	fact=fact*i;
-	printf("%d,\t",fact);
-	
+	printf("%d\t",fact);
+	i++;
 	}
 	printf("=%d",fact);
 	   return 0;
