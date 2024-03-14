@@ -1,16 +1,22 @@
 #include<stdio.h>
 int main()
 {
-	int num,fact=1;
-	printf("enter number of \t");
+	int num,rem;
+   	printf("enter number of \t");
 	scanf("%d",&num);
+	int i,n=2;
 	
-	for(int i=1;i<=num;i++)
+	while(num%n==0)
 	{
-	for(int j=num;j>=i;j--)
-	if(i*j==num)
 	
-	printf("%d*%d=%d\n",i,j,num);
+	if(num%n==0)
+	{
+	rem=(num/n);
+	printf("%d*",n);
+	num=rem;
+	}
+	n++;
+	
 	
 	}
 	

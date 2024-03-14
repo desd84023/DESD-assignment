@@ -1,16 +1,25 @@
 #include<stdio.h>
 int main()
 {
-	int i,j,n;
-	printf("enter no. of pattern");
-	scanf("%d",&n);
-	for(i=0;i<=n;i++)
+	int num;
+    int	flag,j,i;
+	printf("prime number are");
+    for(i=2;j<=100;i++)
 	{
-		for(j=0;j<=i;j++)
-		{
-			printf("*");
-		}
-		printf("\n");
+	flag=1;
+	for(int j=2;j<=i/2;i++)
+	{
+	 if(i%j==0)
+	 {
+	 flag=0;
+	 break;
+	 }
+	 
 	}
-	return 0;
+	 if(flag==1)
+	{ 
+	printf("%d\t",i);
+	}
+      }	  
+	   return 0;
 }

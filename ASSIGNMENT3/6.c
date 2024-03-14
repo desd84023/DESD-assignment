@@ -5,7 +5,7 @@ int main()
 	printf("Enter number:\t");
 	scanf("%d",&num);
 		while(num>i)
-          {
+         {
 		 if(num%i==0)
 		 
 	    	printf("%d\t",i);
