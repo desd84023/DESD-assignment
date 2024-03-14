@@ -9,6 +9,6 @@ int main()
 		fact=fact*i;
 		
 	}
-	printf("%d",fact);
+	printf("%d\n",fact);
 return 0;	
 }
