@@ -9,7 +9,7 @@ int i,base,index,pow=1;
 printf("enter number of base and index\n");
 scanf("%d%d",&base,&index);
 
-printf("power of%d^%d=%d",base,index,power_num(base,index);
+printf("power of%d^%d=%d",base,index,power_num(base,index));
 printf("\n");
 }
 int power_num(int x,int y)
