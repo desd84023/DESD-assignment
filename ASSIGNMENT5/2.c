@@ -4,7 +4,7 @@ int print_num(int marks[]);
 
 int total_num(int marks[]);
 int avg_num(int total);
-int  marks[5];
+int marks[5]={78,85,90,87,85};
 int *ptr=marks;
 int total=0,avg=1;
 
@@ -16,10 +16,10 @@ int main(void)
 		printf("--------------------------------\n");
 		printf("0. Exit\n");
 		printf("1. accept number\n");
-		printf("2.print number\n");
+		printf("2. print number\n");
 		printf("3. total\n ");
-		printf("4. Average of numbers");
-		printf("enter your choice :");
+		printf("4. Average of numbers\n");
+		printf("  enter your choice : ");
 		scanf("%d",&choice);
 		printf("---------------------------------\n");
 		switch(choice)
@@ -42,7 +42,7 @@ int main(void)
 	return 0;
 }
    
-int accept_marks(int marks[])
+int accept_num(int marks[])
 
 {
 	printf("Enter marks of 5 subjects: \n");
@@ -69,13 +69,13 @@ int total=0;
         for(int i=0;i<5;i++)
 	{
 	total+=marks[i];
-	printf("%d\n",total);
 	}
+	printf("%d\n",total);
 }
 int avg_num(int total)
 {
-int avg;
-	avg =total/5;
+int avg=1;
+	avg =(total/5);
 	
 	printf("total=%3.2d\tavg=%3.2d", total,avg);
 		printf("\n");
