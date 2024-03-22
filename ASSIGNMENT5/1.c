@@ -1,23 +1,15 @@
-#include<stdio.h>
-int main(void)
+#include <stdio.h>
+int main()
 {
-	float marks[5];
-	float total=0,avg=1;
-	float *ptr = marks;
-	printf("Enter marks of 5 subjects: \n");
-	for(int i = 0 ; i < 5 ; i++)
-	{
-		printf("marks[%d] : ", i);
-		scanf("%f", ptr +i);			
-	}
+    float eng, phy, chem, math, comp; 
+    float total, average;
+    printf("Enter marks of five subjects:in 100 \n");
+    scanf("%f%f%f%f%f", &eng, &phy, &chem, &math, &comp);
 
-	printf("Array : ");
-	for(int i = 0 ; i < 5 ; i++)
-	{
-	total+=ptr[i];
-	avg =total/5;
-	}
-	printf("total=%3.2f\tavg=%3.2f", total,avg);
-		printf("\n");
-	
-	}
+    total = eng + phy + chem + math + comp;
+    average = total / 5.0;
+    printf("Total marks = %.2f\n", total);
+    printf("Average marks = %.2f\n", average);
+   
+    return 0;
+}
