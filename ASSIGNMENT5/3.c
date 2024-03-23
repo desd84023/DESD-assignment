@@ -33,7 +33,7 @@ void rev_array(short arr[6], int length)
 		arr[i]=arr[j];
 		arr[j]=temp;
 
-		printf("arr[%d]=",arr[j]);
+		
 	}
 }
 

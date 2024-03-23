@@ -2,16 +2,16 @@
 int main()
 {
 	int num;
-    int	flag,j,i;
+    int	flag=0,j,i;
 	printf("prime number are");
-    for(i=2;j<=100;i++)
+    for(i=2;i<=100;i++)
 	{
-	flag=1;
+	
 	for(int j=2;j<=i/2;i++)
 	{
-	 if(i%j==0)
+	 if(i%j!=0)
 	 {
-	 flag=0;
+	 flag=1;
 	 break;
 	 }
 	 

@@ -4,7 +4,7 @@ int main ()
 {  
     int arr[20], i, j, k, size;  
       
-    printf (" Define the number of elements in an array: ");  
+    printf (" Define the number of elements in an array:\n ");  
     scanf (" %d", &size);  
       
     printf (" \n Enter %d elements of an array: \n ", size);  
@@ -37,7 +37,7 @@ int main ()
     }  
       
       
-     printf (" \n Array elements after deletion of the duplicate elements: ");  
+     printf (" \n Array elements after deletion of the duplicate elements:\n  ");  
       
      for ( i = 0; i < size; i++)  
     {  

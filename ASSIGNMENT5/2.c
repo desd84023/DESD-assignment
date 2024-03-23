@@ -3,7 +3,7 @@ int accept_num(int mark[]);
 int print_num(int marks[]);
 
 int total_num(int marks[]);
-int avg_num(int total);
+int avg_num(int marks[]);
 int marks[5]={78,85,90,87,85};
 int *ptr=marks;
 int total=0,avg=1;
@@ -34,7 +34,7 @@ int main(void)
 				total_num(marks);
 				break;
 			case 4: 
-				avg_num(total);
+				avg_num(marks);
 				break;
 
 		}
@@ -70,11 +70,19 @@ int total=0;
 	{
 	total+=marks[i];
 	}
+	
 	printf("%d\n",total);
+
+	
 }
-int avg_num(int total)
+int avg_num(int marks[])
 {
-int avg=1;
+int avg=1,total=0;
+        for(int i=0;i<5;i++)
+	{
+	total+=marks[i];
+	}
+        
 	avg =(total/5);
 	
 	printf("total=%3.2d\tavg=%3.2d", total,avg);
