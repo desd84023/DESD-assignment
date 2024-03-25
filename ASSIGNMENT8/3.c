@@ -12,24 +12,33 @@ void print_student(stud_t s);
 int main(void)
 {
 	stud_t s1;
-
+	int i;
 	accept_student(&s1);
 	print_student(s1);
 
 	return 0;
 }
-	
+
 void accept_student(stud_t *s)
-{
-	printf("Enter student details : (rollno, name, marks) : ");
-	scanf("%d %s %f", &s->rollno, s->name, &s->marks);
+{       
+
+	int i;
+	for(i=1;i<=5;i++)
+	{
+
+		printf("Enter student details %d : (rollno, name, marks) : ",i);
+		scanf("%d %s %f", &s->rollno, s->name, &s->marks);
+	}
 }
 
-	
+
 void print_student(stud_t s)
 {
-	printf("rollno = %d\nname = %s\nmarks = %f\n", s.rollno, s.name, s.marks);
-}
+	int i;
+	for(i=1;i<=5;i++)
+	{
+		printf("%d rollno = %d\nname = %s\nmarks = %f\n",i, s.rollno, s.name, s.marks);
+	}}
 
 
 
